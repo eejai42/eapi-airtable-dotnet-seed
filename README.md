@@ -14,7 +14,7 @@ SSoT.me `ssotme` is the dynamic package manager which keeps the code up to date
 Fork this repository - then clone the project locally
 
 
-    > git clone git@github.com:you/eapi-airtable-python-seed project-xyz
+    > git clone git@github.com:you/eapi-airtable-dotnet-seed project-xyz
     > cd project-xyz
 
 

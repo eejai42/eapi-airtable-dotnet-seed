@@ -35,6 +35,7 @@ namespace YP.SassyMQ.Lib.RabbitMQ
             this.Reply(payload, bdea.BasicProperties);
         }
 
+        
         /// <summary>
         /// AddNAFStrategy - 
         /// </summary>
