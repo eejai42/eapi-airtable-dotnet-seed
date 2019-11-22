@@ -24,10 +24,17 @@ To connect your new repository to your effortless API Endpoint, run these comman
 
     > ssotme -init -name=PictureSalon -addSetting amqps=amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/YOUR PROJECT-URL -addSetting dataclasses-namespace=YOUR_PROJECT.Lib.DataClasses
 
-    Open the `DotNet/ConsoleApp1/Program.cs` and replace `YOUR-PROJECT-URL` with the url to your project.
-    Replace the `admin.GetTABLEXYZ()` with one of your actual tables.  
-    Replace `payload.TABLEXYZs` with a reference to the table you requested above.
-    Press F5.
+    > code .
+
+    > ssotme -build
+
+The code will start to build in the background, and VSCode will open in the root of the project. 
+Use the following instructions to tailor the example for your project.
+
+    1. Open the `DotNet/ConsoleApp1/Program.cs` and replace `YOUR-PROJECT-URL` with the url to your project.
+    2. Replace the `admin.GetTABLEXYZ()` with one of your actual tables.  
+    2. Replace `payload.TABLEXYZs` with a reference to the table you requested above.
+    2. Press F5.
 
 This will create a local python sdk for your EffortlesAPI endpoint - allowing you to immediately begin writing code:
 
