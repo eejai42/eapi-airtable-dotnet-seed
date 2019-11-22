@@ -24,7 +24,7 @@ namespace ConsoleApp1
 
                 admin.GetTABLEXYZ(payload, (nsReply, nsBdea) =>
                 {
-                    Console.WriteLine(JsonConvert.SerializeObject(nsReply.TABLEXYZs));
+                    Console.WriteLine(JsonConvert.SerializeObject(nsReply.TABLEXYZs, Formatting.Indented));
                     waiting = false;
                 }, (error, ebdea) =>
                 {
