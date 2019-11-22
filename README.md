@@ -22,7 +22,12 @@ Fork this repository - then clone the project locally
 
 To connect your new repository to your effortless API Endpoint, run these commands
 
-    > ssotme -init name=ProjectXYZ -p amqps=amqps://effortlessapi-rmq.ssot.me/you-project-xyz
+    > ssotme -init -name=PictureSalon -addSetting amqps=amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/YOUR PROJECT-URL -addSetting dataclasses-namespace=YOUR_PROJECT.Lib.DataClasses
+
+    Open the `DotNet/ConsoleApp1/Program.cs` and replace `YOUR-PROJECT-URL` with the url to your project.
+    Replace the `admin.GetTABLEXYZ()` with one of your actual tables.  
+    Replace `payload.TABLEXYZs` with a reference to the table you requested above.
+    Press F5.
 
 This will create a local python sdk for your EffortlesAPI endpoint - allowing you to immediately begin writing code:
 

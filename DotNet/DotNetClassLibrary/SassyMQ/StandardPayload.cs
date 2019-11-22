@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using pythonSeed2.Lib.DataClasses;
 using RabbitMQ.Client.Events;
 using System;
 using System.Collections.Generic;
@@ -50,8 +49,7 @@ namespace YP.SassyMQ.Lib.RabbitMQ
         public DateTime OnlineSince { get; set; }
         public string EmailAddress { get; set; }
         public string DemoPassword { get; set; }
-        public List<NAFStrategy> NAFStrategies { get; set; }
-
+ 
         public void SetActor(SMQActorBase actor) 
         {
             this.__Actor = actor;

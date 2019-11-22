@@ -1,6 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using EffortlessApi.SassyMQ.Lib;
+using Newtonsoft.Json;
 using System;
-using YP.SassyMQ.Lib.RabbitMQ;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
@@ -8,29 +10,39 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var amqps = "amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/jmillar-naf";
+            var amqps = "amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/YOUR-PROJECT-URL";
             var guest = new SMQGuest(amqps);
             var payload = guest.CreatePayload();
             payload.EmailAddress = "test@test.com";
             payload.DemoPassword = "password123";
+            var waiting = false;
             guest.ValidateTemporaryAccessToken(payload, (reply, bdea) =>
             {
                 var admin = new SMQAdmin(amqps);
                 admin.AccessToken = reply.AccessToken;
                 payload = admin.CreatePayload();
 
-                admin.GetNAFStrategies(payload, (nsReply, nsBdea) =>
+                admin.GetTABLEXYZ(payload, (nsReply, nsBdea) =>
                 {
-                    Console.WriteLine(JsonConvert.SerializeObject(nsReply.NAFStrategies));
+                    Console.WriteLine(JsonConvert.SerializeObject(nsReply.TABLEXYZs));
+                    waiting = false;
                 }, (error, ebdea) =>
                 {
                     Console.WriteLine("ERROR: {0}", error.ErrorMessage);
+                    waiting = false;
                 });
             }, (error, ebdea) =>
             {
                 Console.WriteLine("ERROR: {0}", error.ErrorMessage);
+                    waiting = false;
             });
-            Console.ReadKey();
+            Task.Factory.StartNew(() =>
+            {
+                while (waiting)
+                {
+                    Thread.Sleep(10);
+                }
+            }).Wait();
         }
     }
 }
