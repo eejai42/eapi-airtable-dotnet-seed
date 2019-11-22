@@ -1,14 +1,13 @@
 using Newtonsoft.Json;
 using RabbitMQ.Client.Events;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace YP.SassyMQ.Lib.RabbitMQ
+namespace EffortlessApi.SassyMQ.Lib
 {
     public partial class StandardPayload
     {
@@ -49,7 +48,7 @@ namespace YP.SassyMQ.Lib.RabbitMQ
         public DateTime OnlineSince { get; set; }
         public string EmailAddress { get; set; }
         public string DemoPassword { get; set; }
- 
+
         public void SetActor(SMQActorBase actor) 
         {
             this.__Actor = actor;
