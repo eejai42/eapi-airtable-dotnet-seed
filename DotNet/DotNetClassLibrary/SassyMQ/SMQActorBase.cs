@@ -7,9 +7,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Threading;
-using YP.SassyMQ.Lib.RabbitMQ;
 
-namespace YP.SassyMQ.Lib.RabbitMQ
+namespace EffortlessApi.SassyMQ.Lib
 {
 
     public delegate void PayloadHandler(StandardPayload payload, BasicDeliverEventArgs bdea);
