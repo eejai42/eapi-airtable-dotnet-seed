@@ -1,6 +1,6 @@
-# Effortless API Python Seed Project
+# Effortless API DotNet Seed Project
 
-This project lets you create a python project which can natively
+This project lets you create a dotnet project which can natively
 communicate with your Effortless API.
 
 # Installing the tools
@@ -22,7 +22,7 @@ Fork this repository - then clone the project locally
 
 To connect your new repository to your effortless API Endpoint, run these commands
 
-    > ssotme -init -name=PictureSalon -addSetting amqps=amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/YOUR PROJECT-URL -addSetting dataclasses-namespace=YOUR_PROJECT.Lib.DataClasses
+    > ssotme -init -name=YourProject -addSetting amqps=amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/YOUR PROJECT-URL -addSetting dataclasses-namespace=YOUR_PROJECT.Lib.DataClasses
 
     > code .
 
@@ -36,7 +36,7 @@ Use the following instructions to tailor the example for your project.
     2. Replace `payload.TABLEXYZs` with a reference to the table you requested above.
     2. Press F5.
 
-This will create a local python sdk for your EffortlesAPI endpoint - allowing you to immediately begin writing code:
+This will create a local dotnet sdk for your EffortlesAPI endpoint - allowing you to immediately begin writing code:
 
     guest = SMQGuest("amqps://effortlessapi-rmq.ssot.me/you-project-xyz")
 

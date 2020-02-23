@@ -3,12 +3,12 @@
   "ShowAllFiles": false,
   "SaveDisabled": false,
   "SSoTmeProjectId": "3c107f35-85eb-4847-8bbe-dcdc046b1f16",
-  "Name": "pythonSeed2",
+  "Name": "dotnetSeed2",
   "ProjectSettings": [
     {
       "ProjectSettingId": "52298204-f642-4a83-ab51-658e983b8f07",
       "Name": "project-name",
-      "Value": "pythonSeed2"
+      "Value": "dotnetSeed2"
     },
     {
       "ProjectSettingId": "73d856e2-d60b-4c31-a91c-a49dec2fbc9f",
@@ -75,7 +75,7 @@
         "Description": "Smql To CSharp RabbitMQ"
       },
       "ProjectTranspilerId": "38069e8e-e468-468f-adb6-06cbfe211251",
-      "Name": "SmqlToPythonRabbitMQ",
+      "Name": "SmqlToDotNetRabbitMQ",
       "RelativePath": "/DotNet/DotNetClassLibrary/SassyMQ",
       "CommandLine": "sassymq/smql-to-csharp-rabbitmq -i ../../../SassyMQ/Lexicon.smql -i ../../../ODXML/DataSchema.odxml -p smq-namespace=EffortlessApi.SassyMQ.Lib"
     },
@@ -88,7 +88,7 @@
       "ProjectTranspilerId": "05446ed8-0087-433d-a28b-948e30bbc8da",
       "Name": "OdxmlToCSharpPOCOs",
       "RelativePath": "/DotNet/DotNetClassLibrary/DataClasses",
-      "CommandLine": "odxml42/odxml-to-csharp-pocos -i ../../../ODXML/DataSchema.odxml"
+      "CommandLine": "odxml42/odxml-to-csharp-pocos -i ../../../ODXML/DataSchema.odxml -p airtable=true"
     }
   ]
 }
