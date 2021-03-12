@@ -1,20 +1,11 @@
 {
   "ShowHidden": false,
   "ShowAllFiles": false,
+  "CurrentPath": "",
   "SaveDisabled": false,
   "SSoTmeProjectId": "3c107f35-85eb-4847-8bbe-dcdc046b1f16",
-  "Name": "dotnetSeed2",
+  "Name": "cattleusa",
   "ProjectSettings": [
-    {
-      "ProjectSettingId": "52298204-f642-4a83-ab51-658e983b8f07",
-      "Name": "project-name",
-      "Value": "dotnetSeed2"
-    },
-    {
-      "ProjectSettingId": "73d856e2-d60b-4c31-a91c-a49dec2fbc9f",
-      "Name": "amqps",
-      "Value": "amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/jmillar-naf"
-    },
     {
       "ProjectSettingId": "5e421284-8add-480d-bec1-8e84c1720b26",
       "Name": "make-fks-collections",
@@ -51,9 +42,19 @@
       "Value": "YourProject.Lib.DataClasses"
     },
     {
-      "ProjectSettingId": "0b9e2524-2f35-4d8f-86e0-8bd2aaf251e8",
+      "ProjectSettingId": "b598e579-249e-4dfa-ba25-d24c86751634",
+      "Name": "project-name",
+      "Value": "cattleusa"
+    },
+    {
+      "ProjectSettingId": "243fdb8a-c8c3-4189-a7ec-01174b3051c5",
+      "Name": "amqps",
+      "Value": "amqps://smqPublic:smqPublic@effortlessapi-rmq.ssot.me/appzbhlogieunscww"
+    },
+    {
+      "ProjectSettingId": "00551023-1ff8-4734-8d10-baae4d0db829",
       "Name": "dataclasses-namespace",
-      "Value": "YourProject.Lib.DataClasses"
+      "Value": "cattleusa.Lib.DataClasses"
     }
   ],
   "ProjectTranspilers": [
